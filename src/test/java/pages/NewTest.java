@@ -1,17 +1,12 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
 public class NewTest {
 	@Test
 	public void f() {
 
-		WebDriver driver1;
-		RemoteWebDriver driver2;
 		FirefoxDriver driver = new FirefoxDriver();
 		driver.get("http://demo1.opentaps.org/");
 		driver.findElementById("username").clear();
